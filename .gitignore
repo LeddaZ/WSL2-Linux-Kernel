@@ -164,3 +164,6 @@ sphinx_*/
 
 # Output directory
 out/
+
+# Old defconfig
+Microsoft/config-wsl.old
