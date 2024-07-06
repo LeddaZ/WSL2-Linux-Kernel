@@ -170,3 +170,7 @@ sphinx_*/
 
 # Rust analyzer configuration
 /rust-project.json
+
+arch/*/configs/config-wsl.old
+dist/
+*.tar.gz
