@@ -11,7 +11,7 @@ fi
 
 echo -e "${CYAN}Script started.${DEFAULT}"
 echo -e "${YELLOW}Installing modules and headers...${DEFAULT}"
-cp -fr lib /
+cp -fr lib /usr
 cp -fr include /usr
 echo -e "${GREEN}Installing modules and headers finished.${DEFAULT}"
 echo -e "${CYAN}Script finished. To install the kernel, set the path as shown here: https://learn.microsoft.com/en-us/windows/wsl/wsl-config#example-wslconfig-file${DEFAULT}"
