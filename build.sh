@@ -6,6 +6,7 @@ DEFAULT="\e[0m"
 
 JOBS=$(nproc --all)
 CURDIR=$(pwd)
+CURDATE=$(date +%Y%m%d-%H%M%S)
 
 echo -e "${CYAN}Script started.${DEFAULT}"
 echo -e "${YELLOW}Cleaning...${DEFAULT}"
@@ -22,8 +23,6 @@ echo -e "${GREEN}Building kernel finished.${DEFAULT}"
 echo -e "${YELLOW}Installing modules and headers...${DEFAULT}"
 make O=out INSTALL_MOD_PATH=${CURDIR}/dist INSTALL_HDR_PATH=${CURDIR}/dist modules_install headers_install
 echo -e "${GREEN}Installing modules and headers finished.${DEFAULT}"
-
-CURDATE=$(date +%Y%m%d-%H%M%S)
 
 echo -e "${YELLOW}Creating archive...${DEFAULT}"
 cp install.sh dist/install.sh
