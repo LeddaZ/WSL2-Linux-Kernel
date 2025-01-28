@@ -162,3 +162,4 @@ x509.genkey
 sphinx_*/
 
 Microsoft/config-wsl.old
+arch/x86/configs/config-wsl.old
