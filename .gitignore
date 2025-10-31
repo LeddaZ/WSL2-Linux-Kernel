@@ -172,3 +172,4 @@ sphinx_*/
 
 arch/x86/configs/config-wsl.old
 modules.vhdx
+modules/
