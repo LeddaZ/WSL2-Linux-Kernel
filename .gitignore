@@ -169,3 +169,7 @@ sphinx_*/
 
 # Rust analyzer configuration
 /rust-project.json
+
+# Misc stuff
+*.old
+*.vhdx
