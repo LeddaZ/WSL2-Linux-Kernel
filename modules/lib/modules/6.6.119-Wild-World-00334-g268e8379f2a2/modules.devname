@@ -1,9 +1,0 @@
-# Device nodes to trigger on-demand module loading.
-cuse cuse c10:203
-autofs4 autofs c10:235
-nvram nvram c10:144
-tun net/tun c10:200
-uinput uinput c10:223
-vfio vfio/vfio c10:196
-vhost_net vhost-net c10:238
-vhost_vsock vhost-vsock c10:241
