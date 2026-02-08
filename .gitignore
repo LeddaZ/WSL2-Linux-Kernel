@@ -173,3 +173,4 @@ sphinx_*/
 # Misc stuff
 *.old
 *.vhdx
+modules/
