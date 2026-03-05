@@ -373,9 +373,9 @@ static __always_inline u64 read_hv_clock_msr(void)
 	 * is set to 0 when the partition is created and is incremented in 100
 	 * nanosecond units.
 	 *
-	 * Use hv_raw_get_msr() because this function is used from
-	 * noinstr. Notable; while HV_MSR_TIME_REF_COUNT is a synthetic
-	 * register it doesn't need the GHCB path.
+	 * Use hv_raw_get_msr() on x86 because this function is used from noinstr
+	 * on x86. Notable; while HV_MSR_TIME_REF_COUNT is a synthetic register
+	 * it doesn't need the GHCB path.
 	 */
 #ifdef CONFIG_ARM64
 	return hv_get_msr(HV_MSR_TIME_REF_COUNT);
